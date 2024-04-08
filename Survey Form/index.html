@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 id="title">Wellcom to sourth park</h1>
+  <hr/>
+  <p id="description">Tell us about your experience with South Park</p>
+  <form id="survey-form" method="get" action='https://register-demo.freecodecamp.org'>
+   
+      <label class="inline" id="name-label" for="name">Name 
+        <input id="name" name="name" type="text" placeholder=" Enter your name" required />
+        </label>
+
+      <label class="inline" id="email-label" for="email">Email 
+          <input id="email" name="email" type="email" placeholder= " Enter your email" required />
+      </label>
+      <label class="inline" id="number-label" for="age">Age 
+        <input id="number" name="age" type="number" placeholder=" Age" min="16" max="100" required />
+      </label>
+
+      <label class="inline" for="dropdown">How do you watch South Park? 
+        <select id="dropdown" name="site"  >
+          <option value="">Select an option</option>
+          <option value="web">Website</option>
+          <option value="hulu">Hulu</option>
+          <option value="youtube">Youtub</option>
+          <option value="tv">TV</option>
+          <option value="other">Other</option>
+        </select>
+        </label>
+   
+  <label class="bottom">How much do you like South Park?</label>
+ <label><input type="radio" name="radio-button" value="love"> I love it!</label>
+      <label><input type="radio" name="radio-button" value="like"> I like it</label>
+      <label><input type="radio" name="radio-button" value="ok"> It's ok</label>
+      <label><input type="radio" name="radio-button" value="nah"> Not really</label>
+
+ <label class="bottom" for="dropdown">How many seasons of South Park have you watched? 
+<select id="dropdown" name="seasons"  >
+ <option value="">Select an option</option>
+ <option value="1">0-5</option>
+ <option value="2">6-10</option>
+ <option value="3">10-15</option>
+ <option value="4">15-20</option>
+          
+</select>
+</label>
+
+  <label class="bottom">Who do you watch South Park with?<br>(Check all that apply):?</label>
+   <label><input type="checkbox" name="alone" value="alone"> Alone</label>
+ <label><input type="checkbox" name="friends" value="friends"> Friends</label>
+      <label><input type="checkbox" name="family" value="family"> Family</label>
+     <label> <input type="checkbox" name="partner" value="partner"> Partner</label>
+      <label><input type="checkbox" name="other" value="other"> Other</label>
+
+  <label class="bottom" for="comments">Tell us more about your favorite character(s) or episode(s)
+    <textarea id="comments" rows="5" cols="30" placeholder=" Your comments..."></textarea>
+  </label>
+
+<input id="submit" type="submit" value="Submit">
+</form>
+</body>
+  </html>
+
