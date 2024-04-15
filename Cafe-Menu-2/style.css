@@ -3,6 +3,15 @@ body {
     font-family: sans-serif;
     padding: 20px;
   }
+
+ .back  a{
+    color: #fff;
+   
+  }
+  
+  .back{
+    text-align: left;
+  }
   
   h1 {
     font-size: 40px;
@@ -78,18 +87,18 @@ body {
     margin-bottom: 5px;
   }
   
-  a {
+  .link {
     color: black;
   }
   
-  a:visited {
+  .link:visited {
     color: black;
   }
   
-  a:hover {
+  .link:hover {
     color: brown;
   }
   
-  a:active {
+  .link:active {
     color: brown;
   }

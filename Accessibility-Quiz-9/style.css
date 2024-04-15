@@ -10,6 +10,18 @@
     font-family: Helvetica;
     margin: 0;
   }
+
+  .back{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 14px;
+    z-index: 1100;
+  }
+
+  .back a{
+    color: #fff;
+  }
   
   header {
     width: 100%;
@@ -19,7 +31,8 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: 0px;
+    padding-top: 40px;
   }
   
   #logo {
@@ -126,13 +139,13 @@
     padding-top: 5px;
   }
   
-  p {
+  .question-block p {
     margin-top: 5px;
     padding-left: 15px;
     font-size: 20px;
   }
   
-  p::before {
+  .question-block p::before {
     content: "Question #";
   }
   
