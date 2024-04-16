@@ -201,35 +201,3 @@ body{
     left: 109px; 
     transform: rotate(3deg); 
 }
-
-
-
-
-/* .container {
-    float: left;
-    width: 300px;
-  }
-  
-  .circle {
-    width: 150px;
-    height: 150px;
-    shape-outside: circle(50%);
-    background-color: lightgray;
-    float: left;
-    margin: 0 20px 20px 0;
-  } */
-
-  .container {
-    float: left;
-    width: 300px;
-  }
-  
-  .circle {
-    width: 150px;
-    height: 150px;
-    background-color: lightgray;
-    float: left;
-    margin: 0 20px 20px 0;
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-  }
