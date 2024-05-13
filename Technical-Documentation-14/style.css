@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: #3e3e3f;
+  --green: #2cc675;
+  --blue: #5551ff;
+}
+
+ul.list {
+  list-style: none;
+  margin: 0;
+}
+ol,
+ul {
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 200px;
+  font-size: 16px;
+  color: var(--color-primary);
+  
+}
+
+.back {
+  position: fixed;
+  top: 0;
+  left: 10px;
+}
+
+nav {
+  position: fixed;
+  min-width: 280px;
+  top: 20px;
+  width: 300px;
+  height: 100vh;
+  border-right: 3px solid rgba(114, 113, 113, 0.6);
+}
+header {
+  padding: 18px 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+}
+
+nav > ul {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 30px;
+  border-top: 1px solid #212121;
+  cursor: pointer;
+}
+
+main {
+  /* position: absolute; */
+  margin-left: 300px;
+  padding: 15px 20px;
+}
+
+main header {
+  text-align: left;
+  padding-top: 30px;
+}
+
+article {
+  margin-left: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin: 50px 20px 20px;
+}
+
+span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+code {
+  display: inline-block;
+  padding: 2px 4px;
+  border: 1px solid;
+  background-color: #e7ebec;
+  font-size: 18px;
+}
+
+.box {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.green {
+  border: 1px solid var(--green);
+  box-shadow: 0 6px 1px -2px var(--green), -3px 0 2px -2px var(--green);
+}
+
+.blue {
+  border: 1px solid var(--blue);
+  box-shadow: 0 6px 1px -2px var(--blue), -3px 0 2px -2px var(--blue);
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    font-size: 12px;
+  }
+
+  nav {
+    min-width: 200px;
+    width: 200px;
+  }
+
+  .nav-link {
+    padding: 10px 15px;
+  }
+
+  header {
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+
+  main {
+    margin-left: 200px;
+    padding: 5px 10px;
+  }
+
+  main header {
+    padding: 20px 0;
+  }
+
+  article{
+    margin-left: 10px;
+  }
+
+  .title{
+    font-size: 16px;
+    margin: 30px 10px 10px;
+  }
+
+  span{
+    font-size: 14px;
+  }
+
+  code{
+    font-size: 14px;
+    padding: 0 2px;
+  }
+ 
+}

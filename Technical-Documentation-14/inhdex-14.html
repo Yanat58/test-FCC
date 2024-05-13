@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p class="back"><a href="../index.html">Go back</a></p>
+
+    <nav class="nav" id="navbar">
+      <header>Exploring Figma</header>
+      <ul class="list" id="navbar">
+        <li><a href="#what-is-figma" class="nav-link">What is Figma</a></li>
+        <li><a href="#get-started-with-figma" class="nav-link">Get started with Figma</a></li>
+        <li><a href="#explore-figma-design" class="nav-link">Explore Figma design</a></li>
+        <li><a href="#create-shapes" class="nav-link">Create shapes</a></li>
+        <li><a href="#layer-properties" class="nav-link">Layer properties</a></li>
+        <li><a href="#copy-and-duplicate-layers" class="nav-link">Copy and duplicate layers</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="what-is-figma">
+        <header>What is Figma</header>
+        <article>
+          <p>
+            Figma is a vector design tool that runs in the browser. Use Figma to brainstorm ideas,
+            iterate on designs, create prototypes, and get feedback at any stage of the creative
+            process.
+          </p>
+          <p>
+            In this beginners course, we're going to take you through key stages of designing an app
+            in Figma, from the initial wireframes to an interactive prototype.
+          </p>
+          <p>
+            We'll cover the basics, and introduce more powerful features like Auto Layout,
+            Components, and Prototyping. There's something for everyone, whether you're new to
+            design or new to Figma.
+          </p>
+          <p>
+            We won't cover all these features in depth, but we'll provide you with resources to
+            continue your Figma education
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="get-started-with-figma">
+        <header>Get started with Figma</header>
+        <article>
+          <ul class="list">
+            <li class="start-item">
+              <p class="title">Sign up and create a team</p>
+              <p>
+                Sign up for a free Figma account at figma.com. With a Figma account, you can create
+                teams - shared spaces, where you can collaborate on files and organize them in
+                projects.
+              </p>
+              <p>
+                Choose from a free Starter team or a paid Professional team. If you are a student or
+                educator, you can get access to all of Figma's Professional features for free.
+              </p>
+            </li>
+            <li class="start-item">
+              <p class="title">Invite people to your team</p>
+              <p>
+                Once you've created your team, you can invite members to collaborate. This will give
+                them access to all the projects and files in your team. You can choose what level of
+                access each member has.
+              </p>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="explore-figma-design">
+        <header>Explore Figma design</header>
+        <article>
+          <p>
+            We're pretty sure we have the next million dollar idea - a social media app... for pets!
+            We want some feedback on the general layout, before we start exploring specific elements
+            of our design.
+          </p>
+          <p>
+            Wireframes are simplified designs that are devoid of any style, like color, type, or
+            imagery. They allow us to map out user flows and explore different ways we can structure
+            our app, without having to design any elements, or add any content.
+          </p>
+          <p>
+            We'll start our journey by creating some wireframes in Figma design. Create a new file
+            heading to figma.com/new in the browser.
+          </p>
+
+          <ul class="list">
+            <li>
+              <p class="title">Canvas</p>
+              <p>
+                The canvas is the backdrop for all of your designs - it's where you'll add all the
+                frames, shapes, text, and images.
+              </p>
+              <p>
+                There are no bounds to your creativity, but you should know the canvas extends
+                approximately 65,000 points in each direction.
+              </p>
+              <p>
+                By default, the canvas color is set to <code>#E5E5E5</code>. To change the canvas
+                color:
+              </p>
+              <ol>
+                <li>Click on an empty spot in the canvas to deselect any layers</li>
+                <li>In the right sidebar, click the swatch in the <span>Page</span> section.</li>
+                <li>Select a new color using the color picker.</li>
+                <li>
+                  Or, click <sub><code class="material-symbols-outlined">visibility</code></sub> to
+                  toggle off the background entirely.
+                </li>
+              </ol>
+              <div class="box green">
+                <p>
+                  <strong>Tip!</strong> We mentioned earlier that Figma is a vector design tool.
+                  Unlike pixels, which have a fixed dimension, vector paths are
+                  resolution-independent. This means you can easily scale them to suit your designs.
+                  You can use pixel preview to see how your designs will look when you export them
+                  as rasterized (pixel-based) assets.
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="title">Frames</p>
+              <p>
+                With the great expanse that is the canvas, you need something to put your designs
+                in. Enter frames. Frames are the containers you place your shape, text, and image
+                layers in. You can think of each frame in the canvas as a single screen of your
+                design.
+              </p>
+              <p>
+                If you've used other design tools, you might be familiar with artboards. Frames are
+                Figma's version of an artboard!
+              </p>
+              <ol>
+                <li>
+                  The toolbar contains the tools you need for creating layers. Select the
+                  <sub><code class="material-symbols-outlined">grid_3x3</code></sub> frame tool in
+                  the toolbar.
+                </li>
+                <li>
+                  Frame presets, in the sidebar on the right, let us create frames with specific
+                  dimensions. We know that we're making a mobile app, so we'll select
+                  <span>Google Pixel 2 XL</span> from the presets.
+                </li>
+              </ol>
+              <p>
+                Two exciting things just happened, Figma added a frame to our canvas, and the
+                sidebar on the left is no longer empty. Everything that we add to the canvas will
+                also be added to the layers panel. Let's right-click on this frame and rename it
+                <code>home</code>
+              </p>
+              <div class="box blue">
+                <p>
+                  <strong>Move around the canvas: </strong>To explore more of the the canvas we can
+                  use two fingers on a trackpad - or the scroll wheel on a mouse - to pan around. We
+                  can also press and hold the space bar and click and drag to pan.
+                </p>
+                <p>
+                  If you're using a trackpad you can use the pinch gestures to zoom in and out. You
+                  can also use shortcuts like <code>⌘Command</code> - <code>+</code> and
+                  <code>⌘Command</code> - <code>-</code> to zoom in our out. For granular control,
+                  adjust the zoom level in your view settings.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="create-shapes">
+        <header>Create shapes</header>
+        <article>
+          <p>
+            Now you're ready to add some layers to your frame! As this is a wireframe, you can use
+            shapes, like rectangles and ellipses, to represent more complex aspects of the design.
+          </p>
+          <ol>
+            <li>
+              <p>
+                Select the <sub><code class="material-symbols-outlined">square</code></sub>
+                <span>rectangle tool</span> to create an image for a post on your app's home page.
+              </p>
+            </li>
+            <li>
+              <p>
+                Just like frames, every layer in the canvas has dimensions. You can adjust a layer's
+                position and dimensions in a few ways.
+              </p>
+            </li>
+          </ol>
+          <ul class="list">
+            <li>
+              <p class="title">Position</p>
+              <ul>
+                <li>
+                  <p>
+                    Click and hold on the layer you want to reposition. Drag the layer to the part
+                    of the canvas you'd like to position it on. Release to apply.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    To set specific co-ordinates, you can update the <code>X</code> and
+                    <code>Y</code> fields for that layer. These co-ordinates correspond to the
+                    top-left corner of the layer.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="title">Dimensions</p>
+              <ul>
+                <li>
+                  <p>
+                    Hover over the bounds of a layer until the cursor appears. Click and drag to
+                    change the size of the layer.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    To set specific dimensions, you can update the layer's dimensions using the
+                    width (<span>W</span>) and height (<span>H</span>) fields in the right sidebar.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="title">Parents and children</p>
+              <p>
+                If you look in the layers panel, you can see the rectangle is within the home frame.
+                Some layers, like frames, can contain other layers.
+              </p>
+              <p>
+                We use the analogy of parents, children, and siblings to describe relationships
+                between layers. You may know these terms if you're familiar with web development or
+                programming.
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    <span>Parents</span> are layers that contain other layers. Think frames,
+                    components, and groups.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Children</span> are layers within a parent. Think of the text and shape
+                    layers within a component or group.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Siblings</span> are layers within the same parent. Layers need to be at
+                    the same level in the layer hierarchy to be siblings.
+                  </p>
+                </li>
+              </ul>
+              <p>
+                If you move the rectangle outside of the frame, the Layers panel will update to
+                reflect the change in that relationship. We call this reparenting. Figma uses the
+                dimensions of the relevant layers to determine whether to reparent.
+              </p>
+            </li>
+            <li>
+              <p class="title">Make an avatar</p>
+              <p>
+                Now we're going to create a shape that represent a user's profile picture, or
+                avatar.
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    Select the <sub><code class="material-symbols-outlined">circle</code></sub>
+                    <span>ellipse tool</span> in the menu and click to start drawing the ellipse.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Hold down <code>Shift</code> as we drag to create a perfect circle. This also
+                    constrains the proportions of the ellipse.
+                  </p>
+                </li>
+                <li>
+                  <p>Release to create the avatar with dimensions of around 30 by 30.</p>
+                </li>
+                <li>
+                  <p>
+                    The is toggled on in the right sidebar. If you update one value in the right
+                    sidebar, the other will update too.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Click into one of the fields, then use the arrow keys to nudge the ellipse's
+                    dimensions <code>30</code> to.
+                  </p>
+                </li>
+              </ol>
+              <div class="box green">
+                <p>
+                  <strong>Quick math!</strong> Some fields in Figma accept equations - you can use
+                  equations to resize layers by adding, subtracting, multiplying, or dividing the
+                  existing value. For example: let's add +10 to the field to set the dimensions of
+                  your circle to 40x40.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="layer-properties">
+        <header>Layer properties</header>
+        <article>
+          <ul class="list">
+            <l1>
+              <p class="title">Colors or paints</p>
+              <p>
+                New shape layers have a gray fill by default, but we can apply another color or
+                paint to these layers. Paints can be solid colors or gradients, as well as images or
+                animated gifs.
+              </p>
+              <p>
+                You can apply paints to the fill, stroke, or effect properties of a layer. You can
+                even add more than one paint to a layer and use blend modes to create unique styles
+                or effects.
+              </p>
+              <p>Paints appear similarly in the right sidebar:</p>
+              <ul>
+                <li>
+                  <p>Preview a swatch of the color or a thumbnail of the image or GIF.</p>
+                </li>
+                <li>
+                  <p>View the opacity of the paint applied to this layer.</p>
+                </li>
+                <li>
+                  <p>
+                    See the hex color code for solid colors and gradients, or a generic Image or GIF
+                    label.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Enter a hex code in the field, or click the swatch to open the color picker.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Select colors from the palette, or apply other fills, like gradients, images,
+                    and even animated GIFs.
+                  </p>
+                </li>
+                <li>
+                  <p>Click <code>-</code> to remove the fill.</p>
+                </li>
+              </ul>
+            </l1>
+            <l1>
+              <p class="title">Adjust fill or stroke properties</p>
+              <p>
+                We want our wireframes to appear like outlines instead of solid shapes. We can do
+                this using the stroke property. Strokes work like outlines or borders around our
+                shapes and layers.
+              </p>
+              <ol>
+                <li>
+                  <p>Select both shape layers.</p>
+                </li>
+                <li>
+                  <p>
+                    View the <span>Fill</span> and <span>Stroke</span> properties in the right
+                    sidebar.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Click <code>+</code> under <span>Stroke</span> to add a stroke to the layer.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Click <code>-</code> next to an existing <span>Fill</span> to remove the fill.
+                  </p>
+                </li>
+                <li>
+                  <p>Adjust the color of the stroke:</p>
+                  <ul>
+                    <li>
+                      <p>Enter a hex code directly in the field.</p>
+                    </li>
+                    <li>
+                      <p>
+                        Click the swatch to open the color picker. Select colors from your palette
+                        or apply other paints, like gradients, images, and even animated GIFs.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+              <div class="box">
+                <p>
+                  <strong>Switch it up!</strong> You can quickly change a layer's fill to a stroke
+                  by pressing <code>Shift</code> <code>X</code>. This remove the layer's existing
+                  fill and applies it as a stroke instead. You can then click the swatch in the
+                  <span>>Stroke</span> settings to choose another color.
+                </p>
+              </div>
+            </l1>
+            <l1>
+              <p class="title">Align siblings</p>
+              <p>
+                We've learned how to align layers to their frames, but we can also align layers to
+                each other.
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    With the layers already selected, click
+                    <sub><code class="material-symbols-outlined"> align_horizontal_left</code></sub>
+                    align left.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    As the dimension of the avatar layer are smaller, Figma will move this layer so
+                    it aligns with the larger image layer.
+                  </p>
+                </li>
+              </ul>
+            </l1>
+            <l1>
+              <p class="title">Text</p>
+              <p>
+                Now we need a username to go with our avatar. We'll create a default text layer now
+                and cover adjusting text properties later in the series.
+              </p>
+              <ol>
+                <li>
+                  <p>Select the <code>T</code> text tool in the toolbar.</p>
+                </li>
+                <li>
+                  <p>Click on a spot in the canvas next to our avatar to create a text layer.</p>
+                </li>
+                <li>
+                  <p>Type in nameas our placeholder text.</p>
+                </li>
+                <li>
+                  <p>
+                    We want our text layer to align with the center of our avatar. Click on an empty
+                    spot in the canvas and drag your cursor to select multiple layers.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    We want our text layer to align with the center of our avatar. Drag over
+                    multiple layers to select them at once, and click
+                    <sub
+                      ><code class="material-symbols-outlined"> align_vertical_center </code></sub
+                    >
+                    Align vertical center.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    We'll also need some text below our image. Press <code>T</code> to select the
+                    text tool and click and drag to create another text layer. Add
+                    <code>description</code>.
+                  </p>
+                </li>
+              </ol>
+              <div class="box blue">
+                <p><strong>Nudge values:</strong> If you want to make small adjustments to a layer's position, you can use our arrow keys to nudge objects on the canvas. Figma allows you to set two default nudge amounts: <span>small nudge</span> and <span>big nudge</span>. By default, small nudge is set to <code>1</code> and big nudge set to <code>10</code>.</p>
+              </div>
+            </l1>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="copy-and-duplicate-layers">
+        <header>Copy and duplicate layers</header>
+        <article>
+          <p>
+            We want users of our app to be able to engage with each other by commenting, liking, and
+            saving posts. Let's create some icons for these actions.
+          </p>
+          <ol>
+            <li>
+              <p>Press <code>R</code> to select the rectangle tool.</p>
+            </li>
+            <li>
+              <p>
+                Hold down <code>Shift</code> again to constrain the rectangle's proportions and
+                create a perfect square.
+              </p>
+            </li>
+            <li>
+              <p>Click and drag to draw a rectangle in the canvas. Aim for dimensions of 32x32.</p>
+            </li>
+          </ol>
+          <p>
+            Instead of drawing three separate squares, we can copy the original layer. There are a
+            few ways to copy layers:
+          </p>
+          <ul>
+            <li>
+              <p>
+                Hold down the <code>⌥ Option</code> (MacOS) or <code>Alt</code> (Windows) key, click
+                on the square layer, and drag to create a copy.
+              </p>
+            </li>
+            <li>
+              <p>
+                Press <code>⌘ Command-D</code> (Mac) or <code>Ctrl</code> + <code>D</code> (Windows)
+                to duplicate the layer and create the third square.
+              </p>
+            </li>
+            <li>
+              <p>
+                Figma recognizes the distance between the first two squares and keeps the same
+                distance.
+              </p>
+            </li>
+          </ul>
+          <div class="box green">
+            <p>
+              <strong>Tip!</strong>If we want to change the uniform spacing between them, we can
+              select our layers and update the
+              <sub><code class="material-symbols-outlined"> horizontal_distribute</code></sub>
+              horizontal spacing field in the right sidebar.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
